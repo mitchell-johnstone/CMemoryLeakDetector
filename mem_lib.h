@@ -16,8 +16,8 @@ typedef struct ptr {
     int         visited;
 } ptr_t;
 
-heap_t* heap_head;
-ptr_t* ptr_head;
+heap_t* heap_head; // Linked list of heap recordings
+ptr_t* ptr_head; // Linked list of pointer recordings
 
 void my_gc_init(void);
 void my_malloc(void** pointer, size_t size);
